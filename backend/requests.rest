@@ -1,0 +1,63 @@
+### Test the Create User Endpoint
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": " Wayne",
+    "email": "bruce@gotham.com"
+}
+
+###
+
+GET http://localhost:3000/user
+
+###
+
+GET http://localhost:3000/user/1
+
+###
+
+PATCH http://localhost:3000/user/1
+Content-Type: application/json
+
+{
+    "name":"baby"
+}
+
+###
+
+DELETE http://localhost:3000/user/2
+
+###
+GET http://localhost:3000/products
+
+###
+
+GET http://localhost:3000/products/1
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "product_name": "Organic Almond Milk",
+    "product_type": "Beverage",
+    "product_description": "Unsweetened, vanilla-flavored organic almond milk. High in calcium and vitamin E. Plant-based and dairy-free.",
+    "product_exp_date": "2026-11-15",
+    "product_manu_date": "2026-05-10",
+    "prod_price": 4.99
+  }
+
+###
+
+PATCH  http://localhost:3000/products/6
+Content-Type: application/json
+
+{
+    "product_name": "Premium banana"
+}
+
+###
+
+DELETE  http://localhost:3000/products/1 

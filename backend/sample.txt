@@ -1,0 +1,1 @@
+first data to write to document using node file system
